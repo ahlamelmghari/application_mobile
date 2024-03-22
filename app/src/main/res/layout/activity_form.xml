@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_primary"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_above="@id/card_view"
+        android:padding="28dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/card_view"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please fill in all fields, thank you"
+                android:textColor="@color/my_primary"
+                android:alpha="0.7"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vousetes"
+                android:textSize="15sp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButtonRecruteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recruteur cherche des CV et pose des annonces de travail" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCandidat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidat cherche des annonces et pose des CV" />
+            </RadioGroup>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+          >
+
+           <TextView
+               android:layout_width="98dp"
+               android:layout_height="wrap_content"
+               android:alpha="0.7"
+               android:text="@string/email"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               android:textColor="@color/black"/>
+
+           <EditText
+               android:layout_width="212dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/border2"
+               android:hint="enter your email"
+               android:inputType="textEmailAddress"
+               android:padding="8dp" />
+       </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="City  :"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="215dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border2"
+                android:hint="enter your city"
+                android:padding="8dp" />
+        </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="Password :"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border2"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="Repassword :"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border2"
+                    android:hint="Confirm the password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I accept all the conditions of the site"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"/>
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:text="Login"
+                app:cornerRadius="27dp" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

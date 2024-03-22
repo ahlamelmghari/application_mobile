@@ -1,0 +1,32 @@
+<resources>
+    <string name="signeUP">SIGN UP</string>
+    <string name="liensignein">Already an user? Login</string>
+    <string name="signein">SIGN IN</string>
+    <string name="liensigneup" >don t have a account? sign up</string>
+    <string name="mdp">Forgete Password ?</string>
+    <string name="vousetes">vous etes:</string>
+    <string name="header">vous serez le plus proche au marche</string>
+    <string name="email">Email :</string>
+    <string name="ville">Ville :</string>
+    <string name="password">Password :</string>
+
+
+        <string-array name="spinerville">
+            <item>Casablanca</item>
+            <item>Marrakech</item>
+            <item>Rabat</item>
+
+        </string-array>
+    <string-array name="spinnercategory">
+        <item>Categorie1</item>
+        <item>Categorie2</item>
+        <item>Categorie3</item>
+
+    </string-array>
+    <string-array name="spinnersector">
+        <item>Informatique</item>
+        <item>RH</item>
+        <item>Finance</item>
+
+    </string-array>
+</resources>

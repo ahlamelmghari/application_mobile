@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+
+
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo"
+        android:paddingBottom="50dp"
+
+        android:text="@string/signeUP" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vousetes"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/my_primary"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password">
+
+            <RadioButton
+                android:id="@+id/radioButtonRecruteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Recruteur cherche des CV et pose des annonces de travail"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonCandidat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="10sp"
+                android:text="Candidat cherche des annonces et pose des CV"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="8dp"
+        android:hint="User Name"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/ville"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:minHeight="48dp"
+        android:layout_below="@+id/username"
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/baseline_data_usage_24"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:minHeight="48dp"
+        android:layout_below="@+id/ville"
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/baseline_data_usage_24"/>
+
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:layout_below="@+id/password"
+        android:padding="8dp"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/baseline_data_usage_24"
+        />
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Sign up"
+        android:textSize="18sp"
+        app:cornerRadius="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height='wrap_content'
+        android:layout_below="@+id/btnsignup"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lien2"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+
+
+        android:layout_marginTop="20dp"
+        android:text="@string/liensignein"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

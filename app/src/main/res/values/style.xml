@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RectangularButton" parent="Widget.AppCompat.Button">
+       <!-- <item name="android:background"></item>-->
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Autres propriétés de style que vous souhaitez appliquer -->
+    </style>
+</resources>

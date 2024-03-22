@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sectors_array">
+        <item>Sector 1</item>
+        <item>Sector 2</item>
+        <item>Sector 3</item>
+        <!-- Ajoutez d'autres secteurs au besoin -->
+    </string-array>
+</resources>
